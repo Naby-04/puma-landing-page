@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: sans-serif;
+  /* border: 1px solid red; */
+}
+/*----------------------------------- heading part -----------------------------------*/
+.heading {
+  background: #000000;
+  color: #9f9f9f;
+  font-size: 10px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+details {
+  color: #fff;
+}
+.heading ul {
+  display: flex;
+  gap: 40px;
+}
+.right-side {
+  display: flex;
+  gap: 40px;
+}
+.left-side > p {
+  margin-left: 10px;
+}
+
+/*----------------------------------- header part -----------------------------------*/
+
+header {
+  background: #000;
+}
+/*----------------------------------- nav part -----------------------------------*/
+
+nav {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+.logo-nav {
+  display: flex;
+}
+.logo-nav img {
+  height: 90px;
+  position: absolute;
+  left: 25px;
+  top: -42px;
+}
+nav ul {
+  margin-left: 20px;
+  display: flex;
+}
+nav ul li {
+  padding: 15px 33px;
+  border-right: 1px solid #000;
+}
+nav ul li a {
+  color: #000;
+}
+
+/*------------------------------------ shop part ------------------------------------*/
+
+.shop {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.shop img {
+  height: 25px;
+  padding: 10px 33px;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.shop span {
+  background: rgb(255, 98, 0);
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 7px;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  top: 2px;
+}
+
+/*----------------------------------- main section -----------------------------------*/
+/*----------------------------------- banniere section -----------------------------------*/
+
+.banniere {
+  background: url(images/background.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  color: #fff;
+}
+.banniere > img {
+  height: 40px;
+  width: 60px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #ff9800;
+}
+.banniere button {
+  padding: 10px 25px;
+  font-size: 7px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.banniere button:hover {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+.banniere-text {
+  text-align: center;
+}
+.banniere-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.banniere-text p {
+  font-size: 12px;
+  color: #9f9f9f;
+}
+
+/*----------------------------------- product section -----------------------------------*/
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+.product-text {
+  color: #fff;
+  padding: 0px 20px;
+  font-size: 1.5rem;
+  position: absolute;
+  left: -5px;
+  top: 25px;
+  font-weight: bold;
+  z-index: 11;
+}
+.product1 .border {
+  background: url(images/inner-background.png);
+  background-size: cover;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  width: 260px;
+  height: 120px;
+}
+.product2 .border {
+  background: url(images/inner-background2.png);
+  background-size: cover;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  width: 260px;
+  height: 120px;
+}
+
+/*----------------------------------- product1 part -----------------------------------*/
+
+.product1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.product1 .banner-img {
+  background: url(images/background.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+}
+.product1 p {
+  background: orangered;
+}
+.product1 p:nth-child(1) {
+  width: 90px;
+}
+
+/*----------------------------------- product2 part -----------------------------------*/
+
+.product2 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+}
+.product2 .banner-img {
+  background: url(images/background2.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+}
+.product2 img {
+  width: 300px;
+  position: relative;
+  left: 85px;
+}
+.product2 p {
+  background: #9b9b9b;
+}
+
+/* for laptops */
+@media screen and (max-width: 998px) {
+  .heading {
+    font-size: 8px;
+    justify-content: center;
+    gap: 3%;
+  }
+  .logo-nav img {
+    height: 90px;
+    position: absolute;
+    left: 20px;
+    top: -42px;
+  }
+  nav {
+    justify-content: end;
+    gap: 7%;
+  }
+  nav ul li {
+    padding: 10px 20px;
+  }
+  nav a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .heading {
+    display: none;
+  }
+  .logo-nav img {
+    height: 45px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+  }
+}
+/* for tablets */
+@media screen and (max-width: 780px) {
+  .shop {
+    display: none;
+  }
+  .logo-nav img {
+    height: 40px;
+    position: absolute;
+    left: 30px;
+    top: -1.5px;
+  }
+}
+/* for phones */
+@media screen and (max-width: 600px) {
+  .products {
+    flex-direction: column;
+  }
+  nav {
+    justify-content: end;
+  }
+  nav ul li {
+    padding: 10px 15px;
+  }
+  .logo-nav img {
+    /* height: 5px; */
+    position: absolute;
+    left: 0px;
+    top: -1.5px;
+  }
+}
